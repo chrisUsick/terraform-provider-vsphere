@@ -28,7 +28,7 @@ func dataSourceVSphereVirtualMachines() *schema.Resource {
 				Type:        schema.TypeList,
 				Computed:    true,
 				Description: "list of absolute paths to VMs",
-				Elem:        &schema.Schema{Type: schema.TypeList},
+				Elem:        &schema.Schema{Type: schema.TypeString},
 			},
 		},
 	}
